@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+//TUGAS PRAKTIKUM DIRUMAH (Nested Loop) 12/05/2020 MUHAMMAD REZEKI 
+int main (){
+	int baris1,baris2,kolom1,kolom2 ;
+	cout << "Masuk akan berapa baris pian handak : "<< endl;
+	cin >> kolom2 ;
+	for (baris1 = kolom2 ; baris1>= 0 ; baris1--)
+	{
+		for (baris2 = baris1 ; baris2 >= 0 ; baris2--)
+		{
+			cout << " ";
+		}
+	for (kolom1 = 1 ; kolom1 <= kolom2 - baris1 ; kolom1++)
+	{
+		cout << "+";
+	}for (kolom1 = 1 ; kolom1 < kolom2 - baris1 ; kolom1++)
+	{
+		cout << "+";
+	}
+		cout << endl;
+	}
+	return 0;
+}
